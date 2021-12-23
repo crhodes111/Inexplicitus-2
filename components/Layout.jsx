@@ -1,10 +1,10 @@
 import React from 'react'
-import {Header} from './'
+import {TopBar} from './'
 
 const Layout = ({children}) => {
     return (
         <>
-            <Header/>
+            <TopBar/>
             {children}
             
         </>
