@@ -1,12 +1,17 @@
 import Head from 'next/head'
 import { PostCard, Categories, PostWidget } from '../components'
-import {getPosts} from '../services'
+import {getCategories, getPosts} from '../services'
 import { useEffect, useState } from 'react'
 
+
+
 export default function Home() {
-  const posts =[]
-  useEffect(() => {
-   posts =  getPosts().then(results => results) || [];})
+  const [posts, setPosts] = useState([]);
+
+  useEffect(()=> {
+    getPosts().then((newposts)=> setPosts(newposts))
+  })
+
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
@@ -30,5 +35,11 @@ export default function Home() {
   )
 }
 
+// export async function getStaticProps(){
+//   const posts = (await getPosts()) || [];
 
+//   return {
+//     props: {posts},
+//   };
+// }
 
