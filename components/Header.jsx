@@ -23,7 +23,7 @@ const Header = () => {
                         </Link>
             <br/>
             <br/>
-             <h1 class="block text-3xl font-semibold text-center my-auto pt-10"> The news of today Inexplained</h1>
+             <h1 className="block text-3xl font-semibold text-center my-auto pt-10"> The news of today Inexplained</h1>
 
                 </div>
                 
