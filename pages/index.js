@@ -4,8 +4,9 @@ import {getPosts} from '../services'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
-
-  const posts = (await getPosts()) || [];
+  const posts =[]
+  useEffect(() => {
+   posts = (await getPosts()) || [];})
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
