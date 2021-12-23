@@ -18,7 +18,7 @@ const TopBar = () => {
           <li className="mr-20 cursor-pointer text-white">
             
             <Link href={`/about`}>
-              About
+              ABOUT
             </Link>
           </li>
           </ul>
