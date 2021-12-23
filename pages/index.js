@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 export default function Home() {
   const posts =[]
   useEffect(() => {
-   posts = (await getPosts()) || [];})
+   posts =  getPosts().then(results => results) || [];})
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
