@@ -12,19 +12,23 @@ const Header = () => {
         .then((newCategories)=> setCategories(newCategories))
     },[])
     return (
-        <div className='container mx-auto px-10 mb-8'>
-            <div className='border-b w-full inline-block border-blue-400 py-8'>
-                <div className='md:float-left block'>
-                        <Link href='/'>
-                            <span className='cursor-pointer font-bold text-4xl text-amber-500'>
-                                Inexplicitus Times: The News of Today, Inexplained!
+        <div className='container flex-justify-center  pb-20'>
+            <img src="/Logo.png" alt="" width="200vw" class="absolute left-0 top-0 "/>
+
+            <div className='w-screen mb-5 py-5 text-gray-600 flex justify-center relative'>
+            <Link href='/'>
+                            <span className='cursor-pointer font-bold text-center my-auto text-4xl text-amber-500 pt-10'>
+                                Inexplicitus Times - &nbsp;
                             </span>
                         </Link>
+            <br/>
+            <br/>
+             <h1 class="block text-3xl font-semibold text-center my-auto pt-10"> The news of today Inexplained</h1>
+
                 </div>
-                <div className='md:float-left block'>
+                
                 </div>
-            </div>
-            </div>
+           
     )
 }
 
