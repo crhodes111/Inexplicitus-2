@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const About = () => {
@@ -5,7 +6,7 @@ const About = () => {
         <div className="container mx-auto px-10 mb-8">
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className='lg:col-span-8 col-span-1'>
-            <h1 className='text-6xl'>About Inexplicitus</h1>
+            <h1 className='ceaser text-amber-500 text-6xl'>About Inexplicitus</h1>
             <br/>
         <p>Founded in the year [REDACTED], A.D., by General [REDACTED] of the [REDACTED] Red Army, Inexplicitus Times was born as an anti-literacy propaganda vehicle.</p>
         <br/>
@@ -17,7 +18,7 @@ const About = () => {
 <br/>
  
 
-<p>Can’t get enough Inexplicitus? Stick around a while and explore our archives (link to archives here), demonstrating our coverage from history’s biggest moments, like the bad tuna dish Truman ate moments before nuking Japan, and Genghis Khan's conception. </p>
+<p>Can’t get enough Inexplicitus? Stick around a while and explore our <Link href={`/`}><b className='cursor-pointer'>archives</b></Link> , demonstrating our coverage from history’s biggest moments, like the bad tuna dish Truman ate moments before nuking Japan, and Genghis Khan's conception. </p>
         </div>
         </div>
         </div>
